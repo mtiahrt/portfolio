@@ -3,7 +3,9 @@ import GlobalStyle from './components/GlobalStyle';
 import Nav from './components/Nav';
 import MyWork from './pages/MyWork';
 import ContactMe from './pages/ContactMe';
+import MovieDetail from "./pages/MovieDetail";
 import { Switch, Route } from "react-router-dom";
+
 
 function App() {
   return (
@@ -14,8 +16,11 @@ function App() {
         <Route path="/" exact>
           <AboutUs />
         </Route>
-        <Route path="/work">
+        <Route path="/work" exact>
           <MyWork />
+        </Route>
+        <Route path="/work/:id">
+          <MovieDetail/>
         </Route>
         <Route path="/contact">
           <ContactMe />
