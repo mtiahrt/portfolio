@@ -22,7 +22,7 @@ const ServicesSection = () => {
                     </Card>
                     <Card>
                         <div alt="icon" className="icon">
-                            <img src={teamwork}/>
+                            <img alt="icon" src={teamwork}/>
                             <h3>Teamwork</h3>
                         </div>
                         <p>Voluptate ullamco amet magna sunt proident duis nulla.</p>
@@ -44,7 +44,7 @@ const ServicesSection = () => {
                 </Cards>
             </Description>
             <Image>
-                <img src={home2}/>
+                <img alt="icon" src={home2}/>
             </Image>
         </Services>
     )

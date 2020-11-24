@@ -11,8 +11,7 @@ const MovieDetail = () => {
 
   //UseEffect
   useEffect(() => {
-    const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
-    setMovie(currentMovie[0]);
+    setMovie(movies.find((stateMovie) => stateMovie.url === url));    
   }, [movies, url]);
 
   return (
