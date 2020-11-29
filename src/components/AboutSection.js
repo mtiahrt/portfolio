@@ -1,4 +1,4 @@
-import home1 from "../img/home1.png";
+import computing from "../img/computing-720x405.jpg"
 import { About, Description, Image, Hide } from "../styles";
 //Framer Motion
 import { motion } from "framer-motion";
@@ -29,7 +29,7 @@ const AboutSection = () => {
         <motion.button variants={fade}>Contact Us</motion.button>
       </Description>
       <Image>
-        <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
+        <motion.img variants={photoAnim} src={computing} alt="guy with a camera" />
       </Image>
       <Wave/>
     </About>
