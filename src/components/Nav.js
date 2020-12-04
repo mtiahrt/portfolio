@@ -1,8 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import {Link, link} from "react-router-dom";
+import {motion} from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 const Nav = () => {
+  const {pathname} = useLocation();
+  const lineAnimate = (pathName) => {
+    const width = window.innerWidth < 1300 ? '100%' : '45%';
+    return { width: pathname === pathName ? width : "0%" };
+  }
+
   return (
     <StyledNav>
       <h1>
@@ -12,13 +20,23 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <Link to="/">1. About Me</Link>
+          <Link to="/">About Me</Link>
+          <Line 
+            transition={{duration: .75}} 
+            initial={{width: "0%"}} 
+            animate={ lineAnimate('/') } />
         </li>
         <li>
-          <Link to="/work">2. My Work</Link>
+          <Link to="/work">My Work</Link>
+          <Line transition={{duration: .75}} 
+            initial={{ width: "0%"}} 
+            animate={ lineAnimate('/work') } />
         </li>
         <li>
-          <Link to="/contact">3. Contact Me</Link>
+          <Link to="/contact">Contact Me</Link>
+          <Line transition={{duration: .75}} 
+            initial={{ width: "0%"}} 
+            animate={ lineAnimate('/contact') } />
         </li>
       </ul>
     </StyledNav>
@@ -67,8 +85,20 @@ const StyledNav = styled.nav`
       width: 100%;
       li{
         padding: 0;
+        list-style-type: none;
       }
     }
+  }
+`;
+const Line = styled(motion.div) `
+  height: 0.3rem;
+  background: #23d997;
+  width: 0%;
+  position: absolute;
+  bottom: -80%;
+  left: 60%;
+  @media (max-width: 1300px) {
+    left: 0%;
   }
 `;
 
