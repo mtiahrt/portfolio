@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {Link, link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {motion} from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 
