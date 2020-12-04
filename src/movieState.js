@@ -9,7 +9,7 @@ import theracer2 from "./img/the-racer2.jpg";
 export const MovieState = () => {
   return [
     {
-      title: "The Athlete",
+      title: "First Project",
       mainImg: athlete,
       secondaryImg: athlete2,
       url: "/work/the-athlete",
@@ -32,7 +32,7 @@ export const MovieState = () => {
       ],
     },
     {
-      title: "Good Times",
+      title: "Second Project",
       mainImg: goodtimes,
       url: "/work/good-times",
       secondaryImg: goodtimes2,
@@ -55,7 +55,7 @@ export const MovieState = () => {
       ],
     },
     {
-      title: "The Racer",
+      title: "Thrid Project",
       mainImg: theracer,
       url: "/work/the-racer",
       secondaryImg: theracer2,

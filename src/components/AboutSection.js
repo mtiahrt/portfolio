@@ -11,7 +11,7 @@ const AboutSection = () => {
       <Description>
         <motion.div>
           <Hide>
-            <motion.h2 variants={titleAnim}>We work to make</motion.h2>
+            <motion.h2 variants={titleAnim}>I work to make</motion.h2>
           </Hide>
           <Hide>
             <motion.h2 variants={titleAnim}>
@@ -23,8 +23,8 @@ const AboutSection = () => {
           </Hide>
         </motion.div>
         <motion.p variants={fade}>
-          Contact us for any photography or videography ideas that you have. We
-          have professionals with amazing skills.
+          Contact me for any Frontend/Full Stack development needs that you have. I
+          am a professional with amazing skills.
         </motion.p>
         <motion.button variants={fade}>Contact Me</motion.button>
       </Description>

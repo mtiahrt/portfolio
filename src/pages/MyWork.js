@@ -22,7 +22,7 @@ const MyWork = () => {
         <Frame4 variants={slider}></Frame4>
       </motion.div>
       <Movie>
-        <motion.h2 variants={fade}>The Athlete</motion.h2>
+        <motion.h2 variants={fade}>First Project</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-athlete">
           <Hide>
@@ -31,14 +31,14 @@ const MyWork = () => {
         </Link>
       </Movie>
       <Movie ref={element} variants={fade} animate={controls} initial="hidden">
-        <h2>The Racer</h2>
+        <h2>Second Project</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-racer">
           <img src={theracer} alt="theracer" />
         </Link>
       </Movie>
       <Movie ref={element2} variants={fade} animate={controls2} initial="hidden">
-        <h2>Good Times</h2>
+        <h2>Third Project</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/good-times">
           <img src={goodtimes} alt="goodtimes" />
