@@ -27,7 +27,9 @@ const AboutSection = () => {
           Contact me for any Frontend/Full Stack development needs that you have. I
           am a professional with amazing skills.
         </motion.p>
-        <motion.button variants={fade} onClick={() => <Link to="/contact"></Link>}>Contact Me</motion.button>
+        <Link to="/contact">
+          <motion.button variants={fade}>Contact Me</motion.button>
+        </Link>
       </Description>
       <Image>
         <motion.img variants={photoAnim} src={computing} alt="guy with a camera" />
