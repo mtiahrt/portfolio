@@ -32,7 +32,7 @@ export const MovieState = () => {
       ],
     },
     {
-      title: "Second Project",
+      title: "Third Project",
       mainImg: goodtimes,
       url: "/work/good-times",
       secondaryImg: goodtimes2,
@@ -55,7 +55,7 @@ export const MovieState = () => {
       ],
     },
     {
-      title: "Thrid Project",
+      title: "Second Project",
       mainImg: theracer,
       url: "/work/the-racer",
       secondaryImg: theracer2,

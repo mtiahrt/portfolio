@@ -4,6 +4,7 @@ import { About, Description, Image, Hide } from "../styles";
 import { motion } from "framer-motion";
 import {titleAnim, fade, photoAnim} from '../animation';
 import Wave from './Wave';
+import {Link, link} from "react-router-dom";
 
 const AboutSection = () => {
   return (
@@ -26,7 +27,7 @@ const AboutSection = () => {
           Contact me for any Frontend/Full Stack development needs that you have. I
           am a professional with amazing skills.
         </motion.p>
-        <motion.button variants={fade}>Contact Me</motion.button>
+        <motion.button variants={fade} onClick={() => <Link to="/contact"></Link>}>Contact Me</motion.button>
       </Description>
       <Image>
         <motion.img variants={photoAnim} src={computing} alt="guy with a camera" />
