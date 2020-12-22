@@ -22,13 +22,13 @@ const MyWork = () => {
         <Frame4 variants={slider}></Frame4>
       </motion.div>
       <Movie>
-        <motion.h2 variants={fade}>First Project</motion.h2>
+        <motion.h2 variants={fade}>Gamer Hub</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/the-athlete">
+        <a href="https://game-hub3.herokuapp.com/">
           <Hide>
             <motion.img variants={photoAnim} src={athlete} alt="athlete"/>
           </Hide>
-        </Link>
+        </a>
       </Movie>
       <Movie ref={element} variants={fade} animate={controls} initial="hidden">
         <h2>Second Project</h2>

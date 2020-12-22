@@ -9,7 +9,7 @@ import theracer2 from "./img/the-racer2.jpg";
 export const MovieState = () => {
   return [
     {
-      title: "First Project",
+      title: "Gamer Hub",
       mainImg: athlete,
       secondaryImg: athlete2,
       url: "/work/the-athlete",
