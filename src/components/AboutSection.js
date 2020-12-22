@@ -4,7 +4,7 @@ import { About, Description, Image, Hide } from "../styles";
 import { motion } from "framer-motion";
 import {titleAnim, fade, photoAnim} from '../animation';
 import Wave from './Wave';
-import {Link, link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const AboutSection = () => {
   return (
