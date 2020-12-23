@@ -59,7 +59,7 @@ const HeadLine = styled.div`
   img {
     width: 100%;
     height: 70vh;
-    object-fit: cover;
+    object-fit: contain;
   }
 `;
 const Awards = styled.div`
@@ -93,7 +93,7 @@ const ImageDisplay = styled.div`
   img {
     width: 100%;
     height: 100vh;
-    object-fit: cover;
+    object-fit: contain;
   }
 `;
 
