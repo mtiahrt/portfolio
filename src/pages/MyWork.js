@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
-import athlete from "../img/athlete-small.png";
+import amongUs from "../img/among-us.png";
 import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
 //Animations
@@ -21,29 +21,29 @@ const MyWork = () => {
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
       </motion.div>
-      <Movie>
+      <StyledMovie>
         <motion.h2 variants={fade}>Gamer Hub</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <a href="https://game-hub3.herokuapp.com/">
           <Hide>
-            <motion.img variants={photoAnim} src={athlete} alt="athlete"/>
+            <motion.img variants={photoAnim} src={amongUs} alt="amoungUs"/>
           </Hide>
         </a>
-      </Movie>
-      <Movie ref={element} variants={fade} animate={controls} initial="hidden">
+      </StyledMovie>
+      <StyledMovie ref={element} variants={fade} animate={controls} initial="hidden">
         <h2>Second Project</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-racer">
           <img src={theracer} alt="theracer" />
         </Link>
-      </Movie>
-      <Movie ref={element2} variants={fade} animate={controls2} initial="hidden">
+      </StyledMovie>
+      <StyledMovie ref={element2} variants={fade} animate={controls2} initial="hidden">
         <h2>Third Project</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/good-times">
           <img src={goodtimes} alt="goodtimes" />
         </Link>
-      </Movie>
+      </StyledMovie>
       <ScrollTop />
     </Work>
   );
@@ -60,7 +60,7 @@ const Work = styled(motion.div)`
     padding: 1rem 0rem;
   }
 `;
-const Movie = styled(motion.div)`
+const StyledMovie = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
@@ -70,7 +70,7 @@ const Movie = styled(motion.div)`
   img {
     width: 100%;
     height: 70vh;
-    object-fit: cover;
+    object-fit: contain;
   }
 `;
 const Hide = styled.div`
