@@ -1,16 +1,15 @@
 //Import Images
-import goodtimes from "./img/goodtimes-small.png";
-import theracer from "./img/theracer-small.png";
+import grechenKelly from "./img/GretchenKelly.jpg";
+import thePlayer from "./img/musicPlayer.jpg";
 import goodtimes2 from "./img/good-times2.jpg";
-import theracer2 from "./img/the-racer2.jpg";
 
-export const MovieState = () => {
+export const ProjectsState = () => {
   return [
     {
       title: "Gamer Hub",
       // mainImg: athlete,
       // secondaryImg: athlete2,
-      url: "/work/the-athlete",
+      //url: "/work/the-athlete",
       awards: [
         {
           title: "Truly A masterpiece",
@@ -30,8 +29,8 @@ export const MovieState = () => {
       ],
     },
     {
-      title: "Third Project",
-      mainImg: goodtimes,
+      title: "Flea Market",
+      mainImg: grechenKelly,
       url: "/work/good-times",
       secondaryImg: goodtimes2,
       awards: [
@@ -53,10 +52,10 @@ export const MovieState = () => {
       ],
     },
     {
-      title: "Second Project",
-      mainImg: theracer,
+      title: "Music Player",
+      mainImg: thePlayer,
       url: "/work/the-racer",
-      secondaryImg: theracer2,
+      //secondaryImg: theracer2,
       awards: [
         {
           title: "Truly A masterpiece",
