@@ -31,18 +31,16 @@ const FaqSection = () => {
                       <li>Linq</li>
                       <li>Java</li>
                       <li>Rest</li>
-                      <li>Flexbox</li>
-                      <li>CSS Grid</li>
                   </ul>
               </Toggle>
               <Toggle title= 'Database Technologies I use'>
               <ul className="answer">
                       <li>Postgres</li>
                       <li>Oracle</li>
+                      <li>SQL Server</li>
                       <li>SQL</li>
                       <li>PLSQL</li>
                       <li>TSQL</li>
-                      <li>SQL Server</li>
                   </ul>
               </Toggle>
               <Toggle title= 'Devops Technologies I use'>
