@@ -15,7 +15,7 @@ const Nav = () => {
     <StyledNav>
       <h1>
         <Link to="/" id="logo">
-          Capture
+          Mark Tiahrt
         </Link>
       </h1>
       <ul>

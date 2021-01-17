@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
 import amongUs from "../img/among-us.png";
-import theracer from "../img/theracer-small.png";
-import goodtimes from "../img/goodtimes-small.png";
+import thePlayer from "../img/musicPlayer.jpg";
+import grechenKelly from "../img/GretchenKelly.jpg";
+
 //Animations
 import {motion} from 'framer-motion';
 import {sliderContainer, pageAnimation, fade, photoAnim, lineAnim, slider} from "../animation";
@@ -31,18 +32,18 @@ const MyWork = () => {
         </a>
       </StyledMovie>
       <StyledMovie ref={element} variants={fade} animate={controls} initial="hidden">
-        <h2>Second Project</h2>
+        <h2>Music Player</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/the-racer">
-          <img src={theracer} alt="theracer" />
-        </Link>
+        <a href="https://react-music-player.herokuapp.com/">
+          <img src={thePlayer} alt="theracer" />
+        </a>
       </StyledMovie>
       <StyledMovie ref={element2} variants={fade} animate={controls2} initial="hidden">
-        <h2>Third Project</h2>
+        <h2>Flea Markert</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/good-times">
-          <img src={goodtimes} alt="goodtimes" />
-        </Link>
+        <a href="http://www.gretchenkellyshop.com/">
+          <img src={grechenKelly} alt="grechenKelly"/>
+        </a>
       </StyledMovie>
       <ScrollTop />
     </Work>

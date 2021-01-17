@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
-import { MovieState } from "../movieState";
+import { ProjectsState } from "../projectsState";
 //Animations
 import {motion} from 'framer-motion';
 import {pageAnimation} from "../animation";
 
-const MovieDetail = () => {
+const ProjectDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  const [movies] = useState(MovieState);
+  const [movies] = useState(ProjectsState);
   const [movie, setMovie] = useState(null);
 
   //UseEffect
@@ -108,4 +108,4 @@ const Award = ({ title, description }) => {
   );
 };
 
-export default MovieDetail;
+export default ProjectDetail;

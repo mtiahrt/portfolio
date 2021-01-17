@@ -16,23 +16,27 @@ const AboutSection = () => {
           </Hide>
           <Hide>
             <motion.h2 variants={titleAnim}>
-              so you <span>don't</span> have
+              so you <span>don't</span>
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim}>to.</motion.h2>
+            <motion.h2 variants={titleAnim}> have to.</motion.h2>
           </Hide>
         </motion.div>
         <motion.p variants={fade}>
           Contact me for any Frontend/Full Stack development needs that you have. I
-          am a professional with amazing skills.
+          am a professional with great verbal and written communication.  I am passionate
+          for new technologies.  React and GraphQL are to name a couple. 
+          I enjoy learning new coding pattens and technologies.  I 
+          believe learning doesn't happen through watching but by doing and teaching others.  
+          I am based in Fort Collins, CO.  
         </motion.p>
         <Link to="/contact">
           <motion.button variants={fade}>Contact Me</motion.button>
         </Link>
       </Description>
       <Image>
-        <motion.img variants={photoAnim} src={computing} alt="guy with a camera" />
+        <motion.img variants={photoAnim} src={computing} alt="people working together" />
       </Image>
       <Wave/>
     </About>
