@@ -71,6 +71,7 @@ const Faq = styled(About)`
   }
   li {
     margin-left: 1%;
+    list-style-type: none;
   }
   .faq-line {
     background: #cccccc;

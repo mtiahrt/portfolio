@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 //Images
 import amongUs from "../img/among-us.png";
 import thePlayer from "../img/musicPlayer.jpg";
